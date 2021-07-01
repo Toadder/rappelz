@@ -73,11 +73,13 @@ $(document).ready(function () {
     $('body').toggleClass('_fixed');
   });
 
+  const flipCards = document.querySelectorAll('.info-status__card');
   // FLIP CARDS
   if($(window).width() <= 992) {
-    $('.info-status__card').click(function () {
-      $(this).toggleClass("_reversed");
-      console.log('clicked');
+    flipCards.forEach(element => {
+      element.addEventListener('click', function () {
+        this.classList.toggle('_reversed');
+      });
     });
   }
 
