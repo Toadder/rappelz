@@ -32,11 +32,53 @@ $(document).ready(function () {
   const slider = $(".game-slider__body");
   slider.slick({
     centerMode: true,
-    centerPadding: "325px",
+    centerPadding: "300px",
     slidesToShow: 1,
     infinite: true,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    draggable: false,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          centerPadding: "150px",
+        },
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          centerPadding: "50px",
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          centerPadding: "0px",
+          dots: false,
+        },
+      },
+    ],
   });
+  
+  // HAMBURGER 
+  $('.header__burger').click(function () {
+    $(this).toggleClass('_animated');
+    $('.header-mobile').toggleClass('_active');
+    $('body').toggleClass('_fixed');
+  });
+
+  // FLIP CARDS
+  if($(window).width() <= 992) {
+    $('.info-status__card').click(function () {
+      $(this).toggleClass("_reversed");
+    });
+  }
 
 });
 
