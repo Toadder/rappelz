@@ -189,6 +189,7 @@ body._fixed {
   -webkit-transition: background-image .3s ease;
   -o-transition: background-image .3s ease;
   transition: background-image .3s ease;
+  padding-top: 3px;
 }
 
 .slick-track {
