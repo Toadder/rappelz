@@ -11,14 +11,6 @@
 @font-face {
   font-family: "Lato";
   font-display: swap;
-  src: url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lato";
-  font-display: swap;
   src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
@@ -27,16 +19,8 @@
 @font-face {
   font-family: "Lato";
   font-display: swap;
-  src: url("../fonts/Lato-Heavy.woff") format("woff"), url("../fonts/Lato-Heavy.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lato";
-  font-display: swap;
-  src: url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.woff2") format("woff2");
-  font-weight: 600;
+  src: url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -185,7 +169,7 @@ body._fixed {
 
 .btn {
   font-family: 'Lato', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(17 / 14);
   color: #FFFFFF;
@@ -439,7 +423,7 @@ body._fixed {
 .header-top__login a {
   color: inherit;
   font-family: "Lato", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(17 / 14);
   -webkit-transition: color 0.3s ease;
@@ -453,7 +437,7 @@ body._fixed {
 
 .header-top__language {
   font-family: "Lato", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(17 / 14);
   cursor: pointer;
