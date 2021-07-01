@@ -153,7 +153,7 @@ body._fixed {
 
 .btn {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
   color: #FFFFFF;
@@ -231,12 +231,12 @@ body._fixed {
 
 .header__burger::before,
 .header__burger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   left: 0;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .header__burger::before {
@@ -312,7 +312,7 @@ body._fixed {
 
 .header-top__logo-wrap {
   padding-right: 21px;
-  border-right: 1px solid #262D32;
+  border-right: 1px solid #262d32;
 }
 
 .header-top__logo {
@@ -330,16 +330,16 @@ body._fixed {
 }
 
 .header-top__logo span {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: calc(24 / 19);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#610404), to(#DC2810));
-  background-image: -o-linear-gradient(top, #610404, #DC2810);
-  background-image: linear-gradient(to bottom, #610404, #DC2810);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#610404), to(#dc2810));
+  background-image: -o-linear-gradient(top, #610404, #dc2810);
+  background-image: linear-gradient(to bottom, #610404, #dc2810);
 }
 
 .header-top__list {
@@ -357,14 +357,14 @@ body._fixed {
 }
 
 .header-top__link {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(17 / 14);
   color: inherit;
-  -webkit-transition: color .3s ease;
-  -o-transition: color .3s ease;
-  transition: color .3s ease;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header-top__link:hover {
@@ -377,7 +377,7 @@ body._fixed {
 }
 
 .header-top__link._has-menu::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 50%;
@@ -406,13 +406,13 @@ body._fixed {
 
 .header-top__login a {
   color: inherit;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
-  -webkit-transition: color .3s ease;
-  -o-transition: color .3s ease;
-  transition: color .3s ease;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header-top__login a:hover {
@@ -420,8 +420,8 @@ body._fixed {
 }
 
 .header-top__language {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
   cursor: pointer;
@@ -431,7 +431,7 @@ body._fixed {
 
 .header-top__language::before,
 .header-top__language::after {
-  content: '';
+  content: "";
   position: absolute;
   background-repeat: no-repeat;
 }
@@ -461,9 +461,9 @@ body._fixed {
   top: -200px;
   width: 100%;
   left: 0;
-  -webkit-transition: top .3s ease;
-  -o-transition: top .3s ease;
-  transition: top .3s ease;
+  -webkit-transition: top 0.3s ease;
+  -o-transition: top 0.3s ease;
+  transition: top 0.3s ease;
   background: rgba(23, 23, 23, 0.3);
 }
 
@@ -506,7 +506,7 @@ body._fixed {
 }
 
 .header-bottom__list li::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 50%;
@@ -515,7 +515,7 @@ body._fixed {
           transform: translateY(-50%) rotate(45deg);
   width: 6px;
   height: 6px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
 }
 
 .header-bottom__list li:last-child::before {
@@ -525,13 +525,13 @@ body._fixed {
 .header-bottom__link {
   padding-bottom: 14px;
   padding-top: 15px;
-  font-family: 'BeaufortforLOL-Bold', sans-serif;
+  font-family: "BeaufortforLOL-Bold", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: inherit;
-  -webkit-transition: color .3s ease;
-  -o-transition: color .3s ease;
-  transition: color .3s ease;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header-bottom__link:hover {
@@ -904,13 +904,11 @@ body._fixed {
   margin-bottom: 26px;
 }
 
-.info-status__card:hover .info-status__card-front,
 .info-status__card._reversed .info-status__card-front {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
 
-.info-status__card:hover .info-status__card-back,
 .info-status__card._reversed .info-status__card-back {
   -webkit-transform: rotateX(0deg);
           transform: rotateX(0deg);
@@ -1431,6 +1429,18 @@ body._fixed {
   background-image: linear-gradient(180deg, #700D07 0%, #C0200E 100%);
 }
 
+@media (min-width: 992px) {
+  .info-status__card:hover .info-status__card-front {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+
+  .info-status__card:hover .info-status__card-back {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
 @media (max-width: 14400px) {
   .game-slider .slick-prev {
     left: 30px;
@@ -1486,9 +1496,9 @@ body._fixed {
             align-items: center;
     overflow: auto;
     z-index: -1;
-    -webkit-transition: top .7s;
-    -o-transition: top .7s;
-    transition: top .7s;
+    -webkit-transition: top 0.7s;
+    -o-transition: top 0.7s;
+    transition: top 0.7s;
     background-color: #14181C;
   }
 
