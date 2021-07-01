@@ -77,6 +77,7 @@ $(document).ready(function () {
   if($(window).width() <= 992) {
     $('.info-status__card').click(function () {
       $(this).toggleClass("_reversed");
+      console.log('clicked');
     });
   }
 
