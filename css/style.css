@@ -9,6 +9,14 @@
 }
 
 @font-face {
+  font-family: "BeaufortforLOL-Medium";
+  font-display: swap;
+  src: url("../fonts/BeaufortforLOL-Medium.woff") format("woff"), url("../fonts/BeaufortforLOL-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Lato";
   font-display: swap;
   src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
@@ -520,7 +528,7 @@ body._fixed {
 }
 
 .header-bottom__list li:first-child {
-  margin-left: 8px;
+  margin-left: 0px;
 }
 
 .header-bottom__list li::before {
@@ -543,8 +551,8 @@ body._fixed {
 .header-bottom__link {
   padding-bottom: 14px;
   padding-top: 15px;
-  font-family: "BeaufortforLOL-Bold", sans-serif;
-  font-weight: 700;
+  font-family: "BeaufortforLOL-Medium", sans-serif;
+  font-weight: 500;
   font-size: 14px;
   color: inherit;
   -webkit-transition: color 0.3s ease;
