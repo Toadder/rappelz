@@ -174,7 +174,7 @@ body._fixed {
   line-height: calc(17 / 14);
   color: #FFFFFF;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
-  width: 165px;
+  width: 166px;
   height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,8 +185,6 @@ body._fixed {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   -webkit-transition: background-image .3s ease;
   -o-transition: background-image .3s ease;
@@ -381,6 +379,7 @@ body._fixed {
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  color: white;
 }
 
 .header-top__link:hover {
@@ -429,6 +428,7 @@ body._fixed {
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  color: white;
 }
 
 .header-top__login a:hover {
@@ -443,6 +443,7 @@ body._fixed {
   cursor: pointer;
   position: relative;
   padding: 0 17px 0 24px;
+  color: white;
 }
 
 .header-top__language::before,
@@ -603,6 +604,7 @@ body._fixed {
   line-height: calc(63 / 50);
   max-width: 60%;
   text-align: center;
+  color: white;
 }
 
 .game-separator {
