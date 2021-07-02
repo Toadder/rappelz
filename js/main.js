@@ -29,42 +29,56 @@ $(document).ready(function () {
   });
 
   // SLIDER
-  const slider = $(".game-slider__body");
-  slider.slick({
-    centerMode: true,
-    centerPadding: "300px",
-    slidesToShow: 1,
-    infinite: true,
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    draggable: false,
-    pauseOnFocus: true,
-    pauseOnHover: true,
-    pauseOnDotsHover: true,
+  const slider = new Swiper('.game-slider__body', {
+    navigation: {
+      nextEl: '.game-slider__next',
+      prevEl: '.game-slider__prev',
+    },
+    pagination: {
+      el: '.game-slider__pagination',
+      clickable: true,
+    },
+    centeredSlides: true,
+     slidesPerView: 2,
+     loop: true,
+     spaceBetween: 65,
+     slideToClickedSlide: true,
+     autoHeight: true,
+     autoplay: {
+        delay: 5000, 
+        stopOnLastSlide: false,
+     },
+    speed: 800,
+    preloadImages: false,
+    lazy: {
+      loadPrevNext: true,
+    },
+    allowTouchMove: false,
 
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          centerPadding: "150px",
-        },
+    breakpoints: {
+      320: {
+         slidesPerView: 1,         
       },
-      {
-        breakpoint: 770,
-        settings: {
-          centerPadding: "50px",
-        },
+      576: {
+         slidesPerView: 1,
       },
-      {
-        breakpoint: 576,
-        settings: {
-          centerPadding: "0px",
-          dots: false,
-        },
+      760: {
+         slidesPerView: 2,
+         spaceBetween: 25,
+         centeredSlides: false,
+         slideToClickedSlide: false,
       },
-    ],
+      992: {
+         slidesPerView: 2,
+         spaceBetween: 65,
+         centeredSlides: true,
+      }
+
+    }
+
+
   });
+
   
   // HAMBURGER 
   $('.header__burger').click(function () {
@@ -82,6 +96,26 @@ $(document).ready(function () {
       });
     });
   }
+
+  // DROPDOWN
+  let isMobile = {
+    Android: function() {return navigator.userAgent.match(/Android/i);},
+    BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
+    iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
+    Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
+    Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
+    any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
+  };
+  if(isMobile.any()) {
+    $('body').addClass('touch');
+    $('.header-top__language').click(function(){
+      $(this).toggleClass('_active');
+    });
+  } else {
+    $('body').addClass('mouse');
+  }
+
+
 
 });
 
