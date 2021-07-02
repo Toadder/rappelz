@@ -9,7 +9,11 @@
 }
 
 @font-face {
+<<<<<<< HEAD
   font-family: "BeaufortforLOL";
+=======
+  font-family: "BeaufortforLOL-Medium";
+>>>>>>> 359a0544bfe366d51c3bdd25109be52a457b2ba0
   font-display: swap;
   src: url("../fonts/BeaufortforLOL-Medium.woff") format("woff"), url("../fonts/BeaufortforLOL-Medium.woff2") format("woff2");
   font-weight: 500;
@@ -182,7 +186,11 @@ body._fixed {
   line-height: calc(17 / 14);
   color: #FFFFFF;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+<<<<<<< HEAD
   width: 167px;
+=======
+  width: 166px;
+>>>>>>> 359a0544bfe366d51c3bdd25109be52a457b2ba0
   height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,6 +202,12 @@ body._fixed {
       -ms-flex-pack: center;
           justify-content: center;
   background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
+  -webkit-transition: background-image .3s ease;
+  -o-transition: background-image .3s ease;
+  transition: background-image .3s ease;
+>>>>>>> 359a0544bfe366d51c3bdd25109be52a457b2ba0
   padding-top: 3px;
 }
 
@@ -451,6 +465,7 @@ body._fixed {
   position: relative;
   padding: 0 17px 0 24px;
   color: white;
+<<<<<<< HEAD
   position: relative;
 }
 body.mouse .header-top__language:hover .header-top__sublist {
@@ -474,6 +489,8 @@ body.mouse .header-top__language:hover .header-top__sublist {
   opacity: 0;
   visibility: hidden;
   transition: top .3s ease, opacity .3s ease, visibility .3s ease;
+=======
+>>>>>>> 359a0544bfe366d51c3bdd25109be52a457b2ba0
 }
 
 .header-top__sublist li {
@@ -564,7 +581,11 @@ body.mouse .header-top__language:hover .header-top__sublist {
 }
 
 .header-bottom__list li:first-child {
+<<<<<<< HEAD
   margin-left: 11px;
+=======
+  margin-left: 0px;
+>>>>>>> 359a0544bfe366d51c3bdd25109be52a457b2ba0
 }
 
 .header-bottom__list li::before {
@@ -587,7 +608,11 @@ body.mouse .header-top__language:hover .header-top__sublist {
 .header-bottom__link {
   padding-bottom: 14px;
   padding-top: 15px;
+<<<<<<< HEAD
   font-family: "BeaufortforLOL", sans-serif;
+=======
+  font-family: "BeaufortforLOL-Medium", sans-serif;
+>>>>>>> 359a0544bfe366d51c3bdd25109be52a457b2ba0
   font-weight: 500;
   font-size: 14px;
   color: inherit;
