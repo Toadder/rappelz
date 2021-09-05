@@ -809,7 +809,7 @@ body.mouse .header-top__language:hover .header-top__sublist {
   height: 10px;
   transform:  rotate(45deg);
   background: rgba(106, 106, 106, 0.5);
-  margin: 0 36px;
+  margin: 0 36px !important;
   border-radius:  0;
   transition: background .3s ease;
 }
